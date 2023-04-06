@@ -7,7 +7,7 @@
     "board": "open notion://www.notion.so/{company}/{page-link}"
   },
   "project": {
-    "VScode": "code ~/repos/project/frontend",
+    "VSCode": "code ~/repos/project/frontend",
     "VSCode.dev": "https://vscode.dev/github/company/project",
     "github": "https://github.com/company/project",
     "website": "https://company.com",

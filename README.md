@@ -1,8 +1,10 @@
 # Yall
 
-![|500](https://github.com/Amber-Williams/yall/blob/main/quick-draw.gif)
+<img alt="Yall logo"  src="https://github.com/Amber-Williams/yall/blob/main/quick-draw.gif" width="500"/>
 
 A CLI tool to launch applications in half the time
+
+<img alt="Welcome to Yall" src="https://github.com/Amber-Williams/yall/blob/main/demo.gif" width="600" />
 
 ## Support
 
