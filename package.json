@@ -1,5 +1,5 @@
 {
-  "name": "yall",
+  "name": "@yall/cli",
   "version": "0.0.1",
   "author": "Amber Williams <https://github.com/Amber-Williams>",
   "main": "index.js",
@@ -12,5 +12,15 @@
   },
   "scripts": {
     "start": "node index.js"
-  }
+  },
+  "description": "A CLI tool to launch applications in half the time",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amber-Williams/yall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amber-Williams/yall/issues"
+  },
+  "homepage": "https://github.com/Amber-Williams/yall#readme"
 }
