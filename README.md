@@ -1,6 +1,6 @@
 # Yall
 
-![|500](https://github.com/Amber-Williams/yall/quick-draw.gif)
+![|500](https://github.com/Amber-Williams/yall/blob/main/quick-draw.gif)
 
 A CLI tool to launch applications in half the time
 
