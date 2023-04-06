@@ -1,6 +1,6 @@
 {
   "name": "yall-cli",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "author": "Amber Williams <https://github.com/Amber-Williams>",
   "main": "index.js",
   "type": "module",
@@ -12,16 +12,16 @@
     "selection",
     "app launcher"
   ],
+  "bin": {
+    "yall": "index.js"
+  },
   "dependencies": {
     "chalk": "^5.2.0",
+    "commander": "^10.0.0",
     "inquirer": "^9.1.4",
     "inquirer-autocomplete-prompt": "^3.0.0"
   },
-  "scripts": {
-    "start": "node index.js"
-  },
   "description": "A CLI tool to launch applications in half the time",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Amber-Williams/yall.git"
