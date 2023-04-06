@@ -1,6 +1,6 @@
 {
   "name": "yall-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Amber Williams <https://github.com/Amber-Williams>",
   "main": "index.js",
   "type": "module",
