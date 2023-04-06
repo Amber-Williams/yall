@@ -1,6 +1,7 @@
 {
   "name": "yall",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "author": "Amber Williams <https://github.com/Amber-Williams>",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
