@@ -104,3 +104,4 @@ dist
 .tern-port
 
 choices.my.js
+.DS_Store
