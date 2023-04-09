@@ -3,7 +3,14 @@
 <p align="center">
     <img alt="Yall logo"  src="https://github.com/Amber-Williams/yall/blob/main/quick-draw.gif" width="500"/>
 </p>
-[![Release](https://github.com/Amber-Williams/yall/actions/workflows/release.yml/badge.svg)](https://github.com/Amber-Williams/yall/actions/workflows/release.yml) [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+<p align="center">
+  <a href="https://github.com/Amber-Williams/yall/actions/workflows/release.yml">
+    <img alt="Build states" src="https://github.com/Amber-Williams/yall/actions/workflows/release.yml/badge.svg">
+  </a>
+  <a href="#badge">
+    <img alt="semantic-release: angular" src="https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release">
+  </a>
+</p>
 
 A CLI tool to launch applications in half the time
 
