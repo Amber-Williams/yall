@@ -10,6 +10,9 @@
   <a href="#badge">
     <img alt="semantic-release: angular" src="https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release">
   </a>
+  <a href="https://www.npmjs.com/package/yall-cli">
+    <img alt="Downloads a month" src="https://img.shields.io/npm/dm/yall-cli.svg">
+  </a>
 </p>
 
 A CLI tool to launch applications in half the time
