@@ -1,6 +1,16 @@
 # Yall
 
-<img alt="Yall logo"  src="https://github.com/Amber-Williams/yall/blob/main/quick-draw.gif" width="500"/>
+<p align="center">
+    <img alt="Yall logo"  src="https://github.com/Amber-Williams/yall/blob/main/quick-draw.gif" width="500"/>
+</p>
+<p align="center">
+  <a href="https://github.com/Amber-Williams/yall/actions/workflows/release.yml">
+    <img alt="Build states" src="https://github.com/Amber-Williams/yall/actions/workflows/release.yml/badge.svg">
+  </a>
+  <a href="#badge">
+    <img alt="semantic-release: angular" src="https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release">
+  </a>
+</p>
 
 A CLI tool to launch applications in half the time
 
@@ -15,6 +25,8 @@ A CLI tool to launch applications in half the time
 | Windows             | Not supported |
 | Linux               | Not supported |
 | Other OS            | Not supported |
+
+</br>
 
 | Application        | Support   |
 | ------------------ | --------- |

@@ -1,6 +1,6 @@
 {
   "name": "yall-cli",
-  "version": "0.1.2",
+  "version": "1.0.1",
   "author": "Amber Williams <https://github.com/Amber-Williams>",
   "main": "index.js",
   "type": "module",
@@ -29,5 +29,10 @@
   "bugs": {
     "url": "https://github.com/Amber-Williams/yall/issues"
   },
-  "homepage": "https://github.com/Amber-Williams/yall#readme"
+  "homepage": "https://github.com/Amber-Williams/yall#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^21.0.1"
+  }
 }
