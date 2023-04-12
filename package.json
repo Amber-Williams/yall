@@ -10,7 +10,10 @@
     "cli",
     "autocomplete",
     "selection",
-    "app launcher"
+    "app launcher",
+    "node",
+    "nodejs",
+    "commander"
   ],
   "description": "A CLI tool to launch applications in half the time",
   "repository": {
