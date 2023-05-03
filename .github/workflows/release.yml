@@ -18,21 +18,24 @@ jobs:
           path: "demo.tape"
   release:
     needs: demo-video
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     name: release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          persist-credentials: false
       - uses: actions/setup-node@v3
         with:
           cache: npm
           node-version: lts/*
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Release
+        run: npm clean-install
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
+      - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release

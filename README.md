@@ -19,25 +19,6 @@ A CLI tool to launch applications in half the time
 
 <img alt="Welcome to Yall" src="https://github.com/Amber-Williams/yall/blob/main/demo.gif" width="600" />
 
-## Support
-
-| Operating System    | Support       |
-| ------------------- | ------------- |
-| macOS (Silicon M1)  | Supported     |
-| macOS (Intel chips) | Unknown       |
-| Windows             | Not supported |
-| Linux               | Not supported |
-| Other OS            | Not supported |
-
-</br>
-
-| Application        | Support   |
-| ------------------ | --------- |
-| Chrome             | Supported |
-| Visual Studio Code | Supported |
-| PyCharm            | Supported |
-| Notion             | Supported |
-
 #### Installation
 
 `npm install -g yall-cli`
@@ -59,3 +40,22 @@ Examples include:
 `yall --math 12.7 cm to inch` => `5 inch`
 `yall --math sin(45 deg) ^ 2` => `0.5`
 `yall --math 9 / 3 + 2i` => `3 + 2i`
+
+## Support
+
+| Operating System    | Support       |
+| ------------------- | ------------- |
+| macOS (Silicon M1)  | Supported     |
+| macOS (Intel chips) | Unknown       |
+| Windows             | Not supported |
+| Linux               | Not supported |
+| Other OS            | Not supported |
+
+</br></br>
+
+| Application        | Support   |
+| ------------------ | --------- |
+| Chrome             | Supported |
+| Visual Studio Code | Supported |
+| PyCharm            | Supported |
+| Notion             | Supported |
