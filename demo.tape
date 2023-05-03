@@ -10,7 +10,17 @@ Set MarginFill "#255dd9"
 Set BorderRadius 5
 Set WindowBar Colorful
 
-# act
+# act - calculator demo
+Set TypingSpeed 0.02
+Type "yall --math 12.7 cm to inch"
+Enter
+Sleep 900ms
+
+Type "yall --math 12,000 + 4,000"
+Enter
+Sleep 900ms
+
+# act - picklist demo
 Set TypingSpeed 0.5
 Type yall
 Enter

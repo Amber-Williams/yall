@@ -45,7 +45,7 @@ program
         let mathString = cmd.math + program.args.join(" ");
         mathString = mathString.replaceAll(",", "").replaceAll("_", "");
         mathResult = evaluate(mathString);
-        logger.info(`${mathResult}`);
+        logger.branded(`${mathResult}`);
       } catch {
         logger.error("Unable evaluate the provided equation");
       }
