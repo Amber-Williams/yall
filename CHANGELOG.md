@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/Amber-Williams/yall/compare/v2.0.0...v2.1.0) (2023-05-03)
+
+
+### Features
+
+* **demo:** Add math commands ([c7e3bed](https://github.com/Amber-Williams/yall/commit/c7e3bed57a4d67c0b8922d6ca218255c826136ef))
+
 # [2.0.0](https://github.com/Amber-Williams/yall/compare/v1.0.0...v2.0.0) (2023-05-03)
 
 
