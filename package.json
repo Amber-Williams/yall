@@ -1,6 +1,6 @@
 {
   "name": "yall-cli",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Amber Williams <https://github.com/Amber-Williams>",
   "main": "index.js",
   "type": "module",
@@ -10,7 +10,9 @@
     "cli",
     "autocomplete",
     "selection",
-    "app launcher"
+    "app launcher",
+    "shortcuts",
+    "math"
   ],
   "description": "A CLI tool to launch applications in half the time",
   "repository": {
@@ -28,7 +30,8 @@
     "chalk": "^5.2.0",
     "commander": "^10.0.0",
     "inquirer": "^9.1.4",
-    "inquirer-autocomplete-prompt": "^3.0.0"
+    "inquirer-autocomplete-prompt": "^3.0.0",
+    "mathjs": "^11.8.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -36,7 +39,7 @@
     "semantic-release": "^21.0.1"
   },
   "engines": {
-    "npm": ">=8.0.0 <9.0.0",
+    "npm": ">=8.0.0 <10.0.0",
     "node": ">=18"
   }
 }

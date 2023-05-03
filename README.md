@@ -49,3 +49,13 @@ Recommended:
 #### Customize your flow
 
 Run `yall --edit`
+
+#### Run math evaluations from your terminal
+
+Run `yall --math <eval>`
+Examples include:
+`yall --math 12,000 + 4,000` => `12400`
+`yall --math 12_000 + 4_000` => `12400`
+`yall --math 12.7 cm to inch` => `5 inch`
+`yall --math sin(45 deg) ^ 2` => `0.5`
+`yall --math 9 / 3 + 2i` => `3 + 2i`
