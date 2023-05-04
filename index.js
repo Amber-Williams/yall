@@ -20,14 +20,19 @@ program
   .option("-e, --edit", "Edit your choices")
   .option(
     "-m, --math [expression]",
-    `Math mode:
-      --math 12,000 + 4,000   // 12400
-      --math 12_000 + 4_000  // 12400
-      --math 12 / (2.3 + 0.7)   // 4
-      --math 12.7 cm to inch    // 5 inch
-      --math sin(45 deg) ^ 2    // 0.5
-      --math 9 / 3 + 2i         // 3 + 2i
-      --math det([-1, 2; 3, 1]) // -7
+    `Math mode
+      \n
+      • Handles numeric seprators
+        12,000 + 4,000     =>    12,400
+        12_000 + 4_000     =>    12_400
+      
+      • Handles unit converstion expressions
+        12.7 cm to inch      =>    5 inch
+
+      • Complex expressions
+        "sin(45 deg) ^ 2"    =>    0.5
+        "9 / 3 + 2i"         =>    3 + 2i
+        "det([-1, 2; 3, 1])" =>     -7
   `
   )
   .action(async (cmd) => {
@@ -43,8 +48,19 @@ program
 
       try {
         let mathString = cmd.math + program.args.join(" ");
+        const hasCommas =
+          mathString.replaceAll(",", "").length < mathString.length;
+        const hasUnderscores =
+          mathString.replaceAll("_", "").length < mathString.length;
         mathString = mathString.replaceAll(",", "").replaceAll("_", "");
         mathResult = evaluate(mathString);
+
+        if (hasUnderscores) {
+          mathResult = mathResult.toLocaleString().replace(/,/g, "_");
+        } else if (hasCommas) {
+          mathResult = mathResult.toLocaleString();
+        }
+
         logger.branded(`${mathResult}`);
       } catch {
         logger.error("Unable evaluate the provided equation");
