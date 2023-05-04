@@ -14,11 +14,16 @@ Set WindowBar Colorful
 Set TypingSpeed 0.02
 Type "yall --math 12.7 cm to inch"
 Enter
-Sleep 900ms
+Sleep 1000ms
 
 Type "yall --math 12,000 + 4,000"
 Enter
-Sleep 900ms
+Sleep 1200ms
+
+Hide
+Type "clear"
+Enter
+Show
 
 # act - picklist demo
 Set TypingSpeed 0.5
