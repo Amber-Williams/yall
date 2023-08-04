@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 import fs from "fs";
-import { evaluate } from "mathjs";
+
 import path from "path";
 
 import { program } from "commander";
 
 import logger from "./logger.js";
+import * as math from "./modes/math.js";
+import * as timer from "./modes/timer.js";
 import * as utils from "./utils.js";
 
 const { __dirname } = utils.fileDirName(import.meta);
@@ -18,23 +20,8 @@ program
   .version(version)
   .description(description)
   .option("-e, --edit", "Edit your choices")
-  .option(
-    "-m, --math [expression]",
-    `Math mode
-      \n
-      • Handles numeric seprators
-        12,000 + 4,000     =>    12,400
-        12_000 + 4_000     =>    12_400
-      
-      • Handles unit converstion expressions
-        12.7 cm to inch      =>    5 inch
-
-      • Complex expressions
-        "sin(45 deg) ^ 2"    =>    0.5
-        "9 / 3 + 2i"         =>    3 + 2i
-        "det([-1, 2; 3, 1])" =>     -7
-  `
-  )
+  .option(math.option, math.optionDef)
+  .option(timer.option, timer.optionDef)
   .action(async (cmd) => {
     if (cmd.edit) {
       logger.warning("Opening choices file...");
@@ -44,27 +31,9 @@ program
         logger.error(`An error occurred: ${error}`);
       }
     } else if (cmd.math) {
-      let mathResult;
-
-      try {
-        let mathString = cmd.math + program.args.join(" ");
-        const hasCommas =
-          mathString.replaceAll(",", "").length < mathString.length;
-        const hasUnderscores =
-          mathString.replaceAll("_", "").length < mathString.length;
-        mathString = mathString.replaceAll(",", "").replaceAll("_", "");
-        mathResult = evaluate(mathString);
-
-        if (hasUnderscores) {
-          mathResult = mathResult.toLocaleString().replace(/,/g, "_");
-        } else if (hasCommas) {
-          mathResult = mathResult.toLocaleString();
-        }
-
-        logger.branded(`${mathResult}`);
-      } catch {
-        logger.error("Unable evaluate the provided equation");
-      }
+      await math.logic([cmd.math, ...program.args]);
+    } else if (cmd.timer) {
+      await timer.logic(cmd.timer, program.args[0]);
     } else {
       utils.askChoices();
     }
