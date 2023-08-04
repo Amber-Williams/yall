@@ -1,5 +1,11 @@
+import path from "path";
+
 import player from "./../lib/player.js";
 import logger from "./../logger.js";
+import * as utils from "./../utils.js";
+
+const { __dirname } = utils.fileDirName(import.meta);
+const bellSoundFile = path.join(__dirname, "/../media/bells.mp3");
 
 export const option = "-t, --timer [time unit] [number of units]";
 export const optionDef = `Timer mode
@@ -13,7 +19,7 @@ time units available:
 
 const soundAlarm = () => {
   player
-    .play("./media/bells.mp3", (err) => {
+    .play(bellSoundFile, (err) => {
       if (err) console.log(`Could not play sound: ${err}`);
     })
     .then(() => {
