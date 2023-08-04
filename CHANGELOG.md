@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/Amber-Williams/yall/compare/v2.2.0...v2.3.0) (2023-08-04)
+
+
+### Features
+
+* add timer option ([bd5c6b2](https://github.com/Amber-Williams/yall/commit/bd5c6b296ce4cbdd567534be14709ad6720d5683))
+
 # [2.2.0](https://github.com/Amber-Williams/yall/compare/v2.1.0...v2.2.0) (2023-05-04)
 
 
