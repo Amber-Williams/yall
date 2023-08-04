@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/Amber-Williams/yall/compare/v2.3.0...v2.3.1) (2023-08-04)
+
+
+### Bug Fixes
+
+* bell sound path ([4f10466](https://github.com/Amber-Williams/yall/commit/4f10466ff30b3ba1cf62d9ed4eb377ca343a6cbd))
+
 # [2.3.0](https://github.com/Amber-Williams/yall/compare/v2.2.0...v2.3.0) (2023-08-04)
 
 
